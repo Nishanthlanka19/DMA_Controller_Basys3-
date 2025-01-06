@@ -1,0 +1,299 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Fri Aug 30 03:50:18 2024
+# Process ID: 5780
+# Current directory: C:/Users/z004zyde/Desktop/dma/dma.runs/synth_1
+# Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file: C:/Users/z004zyde/Desktop/dma/dma.runs/synth_1/design_1_wrapper.vds
+# Journal file: C:/Users/z004zyde/Desktop/dma/dma.runs/synth_1\vivado.jou
+# Running On: DISWFZW1D44, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 12, Host memory: 33777 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 511.305 ; gain = 215.156
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+add_files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 670.559 ; gain = 105.164
+Command: read_checkpoint -auto_incremental -incremental C:/Users/z004zyde/Desktop/dma/dma.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/z004zyde/Desktop/dma/dma.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top design_1_wrapper -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8976
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1503.969 ; gain = 439.914
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [C:/Users/z004zyde/Desktop/dma/dma.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/z004zyde/Desktop/dma/dma.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:19]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [c:/Users/z004zyde/Desktop/dma/dma.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_bram_ctrl_0_0' [C:/Users/z004zyde/Desktop/dma/dma.runs/synth_1/.Xil/Vivado-5780-DISWFZW1D44/realtime/design_1_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_bram_ctrl_0_0' (0#1) [C:/Users/z004zyde/Desktop/dma/dma.runs/synth_1/.Xil/Vivado-5780-DISWFZW1D44/realtime/design_1_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_bram_ctrl_1_0' [C:/Users/z004zyde/Desktop/dma/dma.runs/synth_1/.Xil/Vivado-5780-DISWFZW1D44/realtime/design_1_axi_bram_ctrl_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_bram_ctrl_1_0' (0#1) [C:/Users/z004zyde/Desktop/dma/dma.runs/synth_1/.Xil/Vivado-5780-DISWFZW1D44/realtime/design_1_axi_bram_ctrl_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_smc_0' [C:/Users/z004zyde/Desktop/dma/dma.runs/synth_1/.Xil/Vivado-5780-DISWFZW1D44/realtime/design_1_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_smc_0' (0#1) [C:/Users/z004zyde/Desktop/dma/dma.runs/synth_1/.Xil/Vivado-5780-DISWFZW1D44/realtime/design_1_axi_smc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'M00_AXI_awqos' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/z004zyde/Desktop/dma/dma.gen/sources_1/bd/design_1/synth/design_1.v:226]
+WARNING: [Synth 8-7071] port 'M00_AXI_arqos' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/z004zyde/Desktop/dma/dma.gen/sources_1/bd/design_1/synth/design_1.v:226]
+WARNING: [Synth 8-7023] instance 'axi_smc' of module 'design_1_axi_smc_0' has 105 connections declared, but only 103 given [c:/Users/z004zyde/Desktop/dma/dma.gen/sources_1/bd/design_1/synth/design_1.v:226]
+INFO: [Synth 8-6157] synthesizing module 'design_1_blk_mem_gen_0_0' [C:/Users/z004zyde/Desktop/dma/dma.runs/synth_1/.Xil/Vivado-5780-DISWFZW1D44/realtime/design_1_blk_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_blk_mem_gen_0_0' (0#1) [C:/Users/z004zyde/Desktop/dma/dma.runs/synth_1/.Xil/Vivado-5780-DISWFZW1D44/realtime/design_1_blk_mem_gen_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'design_1_blk_mem_gen_0_0' is unconnected for instance 'blk_mem_gen_0' [c:/Users/z004zyde/Desktop/dma/dma.gen/sources_1/bd/design_1/synth/design_1.v:330]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'design_1_blk_mem_gen_0_0' is unconnected for instance 'blk_mem_gen_0' [c:/Users/z004zyde/Desktop/dma/dma.gen/sources_1/bd/design_1/synth/design_1.v:330]
+WARNING: [Synth 8-7023] instance 'blk_mem_gen_0' of module 'design_1_blk_mem_gen_0_0' has 16 connections declared, but only 14 given [c:/Users/z004zyde/Desktop/dma/dma.gen/sources_1/bd/design_1/synth/design_1.v:330]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dma_controller_0_0' [C:/Users/z004zyde/Desktop/dma/dma.runs/synth_1/.Xil/Vivado-5780-DISWFZW1D44/realtime/design_1_dma_controller_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dma_controller_0_0' (0#1) [C:/Users/z004zyde/Desktop/dma/dma.runs/synth_1/.Xil/Vivado-5780-DISWFZW1D44/realtime/design_1_dma_controller_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_jtag_axi_0_0' [C:/Users/z004zyde/Desktop/dma/dma.runs/synth_1/.Xil/Vivado-5780-DISWFZW1D44/realtime/design_1_jtag_axi_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_jtag_axi_0_0' (0#1) [C:/Users/z004zyde/Desktop/dma/dma.runs/synth_1/.Xil/Vivado-5780-DISWFZW1D44/realtime/design_1_jtag_axi_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_sys_clock_100M_0' [C:/Users/z004zyde/Desktop/dma/dma.runs/synth_1/.Xil/Vivado-5780-DISWFZW1D44/realtime/design_1_rst_sys_clock_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_sys_clock_100M_0' (0#1) [C:/Users/z004zyde/Desktop/dma/dma.runs/synth_1/.Xil/Vivado-5780-DISWFZW1D44/realtime/design_1_rst_sys_clock_100M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_sys_clock_100M_0' is unconnected for instance 'rst_sys_clock_100M' [c:/Users/z004zyde/Desktop/dma/dma.gen/sources_1/bd/design_1/synth/design_1.v:399]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_sys_clock_100M_0' is unconnected for instance 'rst_sys_clock_100M' [c:/Users/z004zyde/Desktop/dma/dma.gen/sources_1/bd/design_1/synth/design_1.v:399]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_sys_clock_100M_0' is unconnected for instance 'rst_sys_clock_100M' [c:/Users/z004zyde/Desktop/dma/dma.gen/sources_1/bd/design_1/synth/design_1.v:399]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_sys_clock_100M_0' is unconnected for instance 'rst_sys_clock_100M' [c:/Users/z004zyde/Desktop/dma/dma.gen/sources_1/bd/design_1/synth/design_1.v:399]
+WARNING: [Synth 8-7023] instance 'rst_sys_clock_100M' of module 'design_1_rst_sys_clock_100M_0' has 10 connections declared, but only 6 given [c:/Users/z004zyde/Desktop/dma/dma.gen/sources_1/bd/design_1/synth/design_1.v:399]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [c:/Users/z004zyde/Desktop/dma/dma.gen/sources_1/bd/design_1/synth/design_1.v:406]
+INFO: [Synth 8-6157] synthesizing module 'design_1_system_ila_0_0' [C:/Users/z004zyde/Desktop/dma/dma.runs/synth_1/.Xil/Vivado-5780-DISWFZW1D44/realtime/design_1_system_ila_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_system_ila_0_0' (0#1) [C:/Users/z004zyde/Desktop/dma/dma.runs/synth_1/.Xil/Vivado-5780-DISWFZW1D44/realtime/design_1_system_ila_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_vio_0_0' [C:/Users/z004zyde/Desktop/dma/dma.runs/synth_1/.Xil/Vivado-5780-DISWFZW1D44/realtime/design_1_vio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_vio_0_0' (0#1) [C:/Users/z004zyde/Desktop/dma/dma.runs/synth_1/.Xil/Vivado-5780-DISWFZW1D44/realtime/design_1_vio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (0#1) [c:/Users/z004zyde/Desktop/dma/dma.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [C:/Users/z004zyde/Desktop/dma/dma.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vio_0'. This will prevent further optimization [c:/Users/z004zyde/Desktop/dma/dma.gen/sources_1/bd/design_1/synth/design_1.v:442]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'system_ila_0'. This will prevent further optimization [c:/Users/z004zyde/Desktop/dma/dma.gen/sources_1/bd/design_1/synth/design_1.v:406]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'rst_sys_clock_100M'. This will prevent further optimization [c:/Users/z004zyde/Desktop/dma/dma.gen/sources_1/bd/design_1/synth/design_1.v:399]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1618.195 ; gain = 554.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1618.195 ; gain = 554.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1618.195 ; gain = 554.141
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1618.195 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/z004zyde/Desktop/dma/dma.gen/sources_1/bd/design_1/ip/design_1_vio_0_0/design_1_vio_0_0/design_1_vio_0_0_in_context.xdc] for cell 'design_1_i/vio_0'
+Finished Parsing XDC File [c:/Users/z004zyde/Desktop/dma/dma.gen/sources_1/bd/design_1/ip/design_1_vio_0_0/design_1_vio_0_0/design_1_vio_0_0_in_context.xdc] for cell 'design_1_i/vio_0'
+Parsing XDC File [c:/Users/z004zyde/Desktop/dma/dma.gen/sources_1/bd/design_1/ip/design_1_jtag_axi_0_0/design_1_jtag_axi_0_0/design_1_jtag_axi_0_0_in_context.xdc] for cell 'design_1_i/jtag_axi_0'
+Finished Parsing XDC File [c:/Users/z004zyde/Desktop/dma/dma.gen/sources_1/bd/design_1/ip/design_1_jtag_axi_0_0/design_1_jtag_axi_0_0/design_1_jtag_axi_0_0_in_context.xdc] for cell 'design_1_i/jtag_axi_0'
+Parsing XDC File [c:/Users/z004zyde/Desktop/dma/dma.gen/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0_in_context.xdc] for cell 'design_1_i/blk_mem_gen_0'
+Finished Parsing XDC File [c:/Users/z004zyde/Desktop/dma/dma.gen/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0_in_context.xdc] for cell 'design_1_i/blk_mem_gen_0'
+Parsing XDC File [c:/Users/z004zyde/Desktop/dma/dma.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_0'
+Finished Parsing XDC File [c:/Users/z004zyde/Desktop/dma/dma.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_0'
+Parsing XDC File [c:/Users/z004zyde/Desktop/dma/dma.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0/design_1_axi_smc_0_in_context.xdc] for cell 'design_1_i/axi_smc'
+Finished Parsing XDC File [c:/Users/z004zyde/Desktop/dma/dma.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0/design_1_axi_smc_0_in_context.xdc] for cell 'design_1_i/axi_smc'
+Parsing XDC File [c:/Users/z004zyde/Desktop/dma/dma.gen/sources_1/bd/design_1/ip/design_1_rst_sys_clock_100M_0/design_1_rst_sys_clock_100M_0/design_1_rst_sys_clock_100M_0_in_context.xdc] for cell 'design_1_i/rst_sys_clock_100M'
+Finished Parsing XDC File [c:/Users/z004zyde/Desktop/dma/dma.gen/sources_1/bd/design_1/ip/design_1_rst_sys_clock_100M_0/design_1_rst_sys_clock_100M_0/design_1_rst_sys_clock_100M_0_in_context.xdc] for cell 'design_1_i/rst_sys_clock_100M'
+Parsing XDC File [c:/Users/z004zyde/Desktop/dma/dma.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_1_0/design_1_axi_bram_ctrl_1_0/design_1_axi_bram_ctrl_0_0_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_1'
+Finished Parsing XDC File [c:/Users/z004zyde/Desktop/dma/dma.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_1_0/design_1_axi_bram_ctrl_1_0/design_1_axi_bram_ctrl_0_0_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_1'
+Parsing XDC File [c:/Users/z004zyde/Desktop/dma/dma.gen/sources_1/bd/design_1/ip/design_1_dma_controller_0_0/design_1_dma_controller_0_0/design_1_dma_controller_0_0_in_context.xdc] for cell 'design_1_i/dma_controller_0'
+Finished Parsing XDC File [c:/Users/z004zyde/Desktop/dma/dma.gen/sources_1/bd/design_1/ip/design_1_dma_controller_0_0/design_1_dma_controller_0_0/design_1_dma_controller_0_0_in_context.xdc] for cell 'design_1_i/dma_controller_0'
+Parsing XDC File [c:/Users/z004zyde/Desktop/dma/dma.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0/design_1_system_ila_0_0_in_context.xdc] for cell 'design_1_i/system_ila_0'
+Finished Parsing XDC File [c:/Users/z004zyde/Desktop/dma/dma.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0/design_1_system_ila_0_0_in_context.xdc] for cell 'design_1_i/system_ila_0'
+Parsing XDC File [C:/Users/z004zyde/Desktop/dma/dma.srcs/constrs_1/new/dma.xdc]
+Finished Parsing XDC File [C:/Users/z004zyde/Desktop/dma/dma.srcs/constrs_1/new/dma.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/z004zyde/Desktop/dma/dma.srcs/constrs_1/new/dma.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/z004zyde/Desktop/dma/dma.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/z004zyde/Desktop/dma/dma.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1618.195 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1618.195 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/blk_mem_gen_0' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 1618.195 ; gain = 554.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 1618.195 ; gain = 554.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/vio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/jtag_axi_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/blk_mem_gen_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_bram_ctrl_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_sys_clock_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_bram_ctrl_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/dma_controller_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/system_ila_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 1618.195 ; gain = 554.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 1618.195 ; gain = 554.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 1618.195 ; gain = 554.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:23 . Memory (MB): peak = 1625.391 ; gain = 561.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:23 . Memory (MB): peak = 1625.391 ; gain = 561.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:06 ; elapsed = 00:00:23 . Memory (MB): peak = 1625.391 ; gain = 561.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:07 ; elapsed = 00:00:27 . Memory (MB): peak = 1630.062 ; gain = 566.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:07 ; elapsed = 00:00:27 . Memory (MB): peak = 1630.062 ; gain = 566.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:07 ; elapsed = 00:00:27 . Memory (MB): peak = 1630.062 ; gain = 566.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:07 ; elapsed = 00:00:27 . Memory (MB): peak = 1630.062 ; gain = 566.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:27 . Memory (MB): peak = 1630.062 ; gain = 566.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:07 ; elapsed = 00:00:27 . Memory (MB): peak = 1630.062 ; gain = 566.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------+----------+
+|      |BlackBox name                 |Instances |
++------+------------------------------+----------+
+|1     |design_1_axi_bram_ctrl_0_0    |         1|
+|2     |design_1_axi_bram_ctrl_1_0    |         1|
+|3     |design_1_axi_smc_0            |         1|
+|4     |design_1_blk_mem_gen_0_0      |         1|
+|5     |design_1_dma_controller_0_0   |         1|
+|6     |design_1_jtag_axi_0_0         |         1|
+|7     |design_1_rst_sys_clock_100M_0 |         1|
+|8     |design_1_system_ila_0_0       |         1|
+|9     |design_1_vio_0_0              |         1|
++------+------------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------+------+
+|      |Cell                        |Count |
++------+----------------------------+------+
+|1     |design_1_axi_bram_ctrl_0    |     1|
+|2     |design_1_axi_bram_ctrl_1    |     1|
+|3     |design_1_axi_smc            |     1|
+|4     |design_1_blk_mem_gen_0      |     1|
+|5     |design_1_dma_controller_0   |     1|
+|6     |design_1_jtag_axi_0         |     1|
+|7     |design_1_rst_sys_clock_100M |     1|
+|8     |design_1_system_ila_0       |     1|
+|9     |design_1_vio_0              |     1|
+|10    |IBUF                        |     1|
++------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:07 ; elapsed = 00:00:27 . Memory (MB): peak = 1630.062 ; gain = 566.008
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:04 ; elapsed = 00:00:25 . Memory (MB): peak = 1630.062 ; gain = 566.008
+Synthesis Optimization Complete : Time (s): cpu = 00:00:07 ; elapsed = 00:00:27 . Memory (MB): peak = 1630.062 ; gain = 566.008
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1642.406 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1647.293 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: b83f67a8
+INFO: [Common 17-83] Releasing license: Synthesis
+47 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:33 . Memory (MB): peak = 1647.293 ; gain = 959.145
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1647.293 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/z004zyde/Desktop/dma/dma.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 30 03:51:17 2024...

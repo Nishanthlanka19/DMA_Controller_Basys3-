@@ -1,0 +1,26 @@
+
+*** Running vivado
+    with args -log design_1_system_ila_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_system_ila_0_0.tcl
+
+
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_system_ila_0_0.tcl -notrace
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_system_ila_0_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry da8174faa9378ef4 to dir: C:/Users/z004zyde/Desktop/dma/dma.runs/design_1_system_ila_0_0_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/z004zyde/Desktop/dma/dma.cache/ip/2023.2/d/a/da8174faa9378ef4/design_1_system_ila_0_0.dcp to C:/Users/z004zyde/Desktop/dma/dma.runs/design_1_system_ila_0_0_synth_1/design_1_system_ila_0_0.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/z004zyde/Desktop/dma/dma.cache/ip/2023.2/d/a/da8174faa9378ef4/design_1_system_ila_0_0_sim_netlist.v to C:/Users/z004zyde/Desktop/dma/dma.runs/design_1_system_ila_0_0_synth_1/design_1_system_ila_0_0_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/z004zyde/Desktop/dma/dma.cache/ip/2023.2/d/a/da8174faa9378ef4/design_1_system_ila_0_0_sim_netlist.vhdl to C:/Users/z004zyde/Desktop/dma/dma.runs/design_1_system_ila_0_0_synth_1/design_1_system_ila_0_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/z004zyde/Desktop/dma/dma.cache/ip/2023.2/d/a/da8174faa9378ef4/design_1_system_ila_0_0_stub.v to C:/Users/z004zyde/Desktop/dma/dma.runs/design_1_system_ila_0_0_synth_1/design_1_system_ila_0_0_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/z004zyde/Desktop/dma/dma.cache/ip/2023.2/d/a/da8174faa9378ef4/design_1_system_ila_0_0_stub.vhdl to C:/Users/z004zyde/Desktop/dma/dma.runs/design_1_system_ila_0_0_synth_1/design_1_system_ila_0_0_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_system_ila_0_0, cache-ID = da8174faa9378ef4.
+config_ip_cache: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 647.836 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Sep  5 15:47:40 2024...
