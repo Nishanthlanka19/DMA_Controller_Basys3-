@@ -1,0 +1,6 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../dma.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" --include "../../../../../dma.gen/sources_1/bd/design_1/ipshared/35de/hdl/verilog" --include "../../../../../dma.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "C:/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
+"design_1_wrapper_func_synth.v" \
+
+# Do not sort compile order
+nosort
